@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VelozLink - Landing Page</title>
+    <style>
+        :root {
+            --bg-color: #0a1114;
+            --card-bg: #1a262b;
+            --solana-green: #14f195;
+            --solana-purple: #9945FF;
+            --text-main: #e0e0e0;
+            --text-dim: #94a3b8;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            padding: 80px 0;
+            text-align: center;
+            background: radial-gradient(circle at top, #1e293b 0%, #0a1114 70%);
+        }
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            background: linear-gradient(90deg, var(--solana-green), var(--solana-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -2px;
+        }
+        .tagline {
+            font-size: 1.5rem;
+            color: var(--text-dim);
+            margin-top: 10px;
+        }
+        .hero-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 1px solid var(--solana-green);
+            color: var(--solana-green);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        section {
+            padding: 60px 0;
+        }
+        h2 {
+            font-size: 2rem;
+            color: var(--solana-green);
+            border-left: 4px solid var(--solana-purple);
+            padding-left: 15px;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid #334148;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--solana-purple);
+        }
+        .card h3 {
+            color: var(--solana-purple);
+            margin-top: 0;
+        }
+        .highlight {
+            color: var(--solana-green);
+            font-weight: bold;
+        }
+        .workflow {
+            background: #0d161a;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px dashed var(--solana-green);
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .step-num {
+            background: var(--solana-purple);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        th {
+            background: var(--solana-purple);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #334148;
+        }
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            color: var(--text-dim);
+            border-top: 1px solid #334148;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: linear-gradient(90deg, var(--solana-green), var(--solana-purple));
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <span class="hero-badge">Web3 Mobility Solution</span>
+            <h1>VelozLink</h1>
+            <p class="tagline">Conectando Professores. Acelerando Rotas. Powered by Solana.</p>
+            <a href="#" class="cta-button">Ver Deck do Investidor</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="problem">
+            <h2>O Problema & A Oportunidade</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Ineficiência Logística</h3>
+                    <p>Professores gastam até 30% da sua renda em deslocamentos individuais e cansativos entre diferentes campus.</p>
+                </div>
+                <div class="card">
+                    <h3>Subutilização de Rotas</h3>
+                    <p>Milhares de docentes realizam trajetos idênticos em horários similares, sem qualquer coordenação ou economia de escala.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution">
+            <h2>Nossa Solução Web3</h2>
+            <div class="workflow">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <p><span class="highlight">Matching Algorítmico:</span> Cruzamento de itinerários acadêmicos e janelas de aulas em tempo real.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <p><span class="highlight">Smart Escrow:</span> Pagamentos retidos em contratos inteligentes, garantindo segurança para passageiro e motorista.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <p><span class="highlight">Solana Network:</span> Liquidação instantânea com taxas inferiores a $0.01.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits">
+            <h2>Impacto no Ecossistema</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Público</th>
+                        <th>Vantagem Estratégica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="highlight">Professores</span></td>
+                        <td>Economia direta de custos e networking entre pares.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="highlight">Motoristas</span></td>
+                        <td>Recebimento em tempo real e público qualificado/seguro.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="highlight">Investidores</span></td>
+                        <td>Modelo escalável em um nicho de alta retenção e baixa rotatividade.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 VelozLink Ecosystem. Desenvolvido para a fase de Ideação e Descoberta.</p>
+            <p style="font-size: 0.8rem;">Built on Solana.</p>
+        </div>
+    </footer>
+</body>
+</html>
